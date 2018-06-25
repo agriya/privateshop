@@ -1,0 +1,64 @@
+ol,h2,div,li,span {
+	padding:0px;
+	margin:0px;
+}
+body {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+}
+li {
+	list-style-type:none;
+	display:block;
+}
+div#orders-address{
+    width:600px;
+}
+span.user-title {
+	float:left;
+	display:block;
+	width:94px;
+	font-weight:bold;
+	padding:5px 0;
+	text-transform:capitalize;
+}
+span.user-info {
+	float:left;
+	display:block;
+	width:160px;
+	padding:5px 0;
+	text-transform:capitalize;
+}
+h2 {
+	margin:8px 15px;color:#e77c9f; font:20px normal Verdana, Arial, Helvetica, sans-serif;
+}
+ol.list li div {
+	margin:5px 0px 5px 0px;
+	
+}
+ol.list {
+	margin: 15px 0 20px 15px;
+	border:1px solid #CCC;
+	background:#f9f5fe;
+	padding:5px;
+}
+/* hack code style is begin */
+.clearfix:after {
+	clear:both;
+	content:'.';
+	display:block;
+	visibility:hidden;
+	height:0;
+}
+.clearfix {
+	display:inline-block;
+}
+* html .clearfix {
+	height:1%;
+}
+.clearfix {
+	display:block;
+}
+*+html .clearfix {
+	display: inline-block;
+}

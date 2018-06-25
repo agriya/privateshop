@@ -1,0 +1,332 @@
+ul.product-chart > li:first-child, div.bid-winner-inner-block li li {
+	background: none;
+	padding: 0;
+}
+ul.product-chart > li.new-product {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -2px;
+	padding: 0 0 0 3px;
+	position: relative;
+	z-index: 2;
+}
+ul.product-chart > li.new-product span.new-product {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -28px;
+	color: #FFFFFF;
+	padding: 2px 15px 2px 12px;
+}
+div.upcoming-inner-left {
+	height: 51px;
+	left: -7px;
+	min-width: 220px;
+	padding: 0 0 0 28px;
+	top: 11px;
+	z-index: 0;
+}
+div.upcoming-inner-left {
+	background: none;
+}
+div.upcoming-inner-right {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat right -491px;
+	height: 60px;
+	left: -10px;
+	min-width: 150px;
+	padding: 0 0 0 28px;
+	position: absolute;
+	top: 19px;
+	z-index: 0;
+}
+div.upcoming-inner-right li {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat 20px -570px;
+	padding: 28px 0 0;
+}
+span.bid-closed {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -214px;
+	padding: 0 0 0 3px;
+}
+span.bid-closed a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -240px;
+}
+span.product-upcoming {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -161px;
+	font-weight: 400;
+	padding: 0 0 0 3px;
+}
+span.product-upcoming a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -187px;
+	display: block;
+}
+span.product-closed {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -634px;
+	font-weight: 400;
+	padding: 0 0 0 3px;
+}
+span.product-closed a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -660px;
+}
+ul.product-chart > li.cancelled {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat 22px -575px;
+	left: 245px;
+	padding: 23px 0 0;
+	top: 33px;
+	position:absolute;
+}
+span.new-order {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -528px;
+	padding: 0 0 0 3px;
+	z-index: 2;
+}
+span.new-order span, div.dashboard-filter-block ul.product-chart > li span.new-order span {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -554px;
+	color: #FFFFFF;
+	display: block;
+	padding: 3px 15px 2px 12px;
+}
+div.product-chart-block, div.order-chart-block {
+	border: 1px solid #DDDDDD;
+	margin: 10px 0;
+	padding: 10px 0 0 10px;
+	position: relative;
+	width:455px;
+	background:#FFFFFF;
+}
+div.order-chart-block {
+    height: 200px;
+    margin: 10px auto;
+    width: auto;
+}
+ul.product-chart, ul.order-chart {
+	float: left;
+	height: 80px;
+	padding: 10px 0 0 6px;
+	position: relative;
+	z-index: 2;
+}
+ul.order-chart {
+	height: 116px;
+	padding: 65px 0 0 6px;
+}
+ul.product-chart > li.new-order {
+    background: url("../img/site-specific/admin-list-chart.png") no-repeat 32px -1552px;
+    padding: 0 60px 0 0;
+}
+ul.product-chart > li {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat -22px 3px;
+	float: left;
+	padding: 0 0 0 18px;
+	position: relative;
+	z-index: 1;
+}
+ul.order-chart > li{
+	background-position:-53px -1552px;
+	padding: 0 0 0 60px;
+}
+span.product-open {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -687px;
+	font-weight: 400;
+	padding: 0 0 0 3px;
+}
+ul.product-chart li a {
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 5px 15px 7px 12px;
+	white-space: nowrap;
+}
+span.product-open a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -713px;
+}
+ul.product-chart li.payment-pending {
+	padding: 0;
+	width:125px;
+	background: none;
+}
+ul.order-chart li.payment-pending{
+	width:auto;
+}
+li.new-product {
+	left: 0;
+}
+div.winner-inner-block {
+    background: url("../img/site-specific/admin-list-chart.png") no-repeat 57px -576px;
+    min-width: 180px;
+    padding: 23px 0 0;
+    top: 23px;
+	left:2px;
+    z-index: 1;
+}
+div.upcoming-inner-left, div.winner-inner-block {
+	position: absolute;
+}
+.winner-inner-block li {
+	padding: 0 0 0 24px;
+}
+span.bid-expired {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -265px;
+	padding: 0 0 0 3px;
+}
+ul.product-chart li a, span.bidding a, span.bid-dev a {
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 12px;
+	padding: 6px 15px 6px 12px;
+	white-space: nowrap;
+}
+ul.product-chart li a:hover {
+	text-decoration:underline;
+}
+span.bid-expired a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -291px;
+}
+span.waiting-esrow, span.bid-lost, ul.product-chart li span.request-escrow {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -316px;
+	float: left;
+	padding: 0 0 0 3px;
+}
+span.waiting-esrow a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -342px;
+	display: block;
+}
+div.bottom-chart-arrow {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat -3px -1019px;
+	height: 38px;
+	left: 10px;
+	position: absolute;
+	top: 23px;
+	width: 30px;
+}
+ul.inprocess {
+	position: absolute;
+	left:20px;
+	top:23px;
+}
+span.order-inprocess {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -108px;
+	padding: 0 0 0 3px;
+}
+span.order-inprocess a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -134px;
+	font-weight:normal;
+}
+ul.inprocess li.cancelled {
+    background: url("../img/site-specific/admin-list-chart.png") no-repeat 77px -576px;
+    padding: 23px 0 0;
+}
+span.cancelled {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -956px;
+	padding: 0 0 0 3px;
+}
+span.cancelled a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -982px;
+}
+li.payment-pending ul.completed {
+    background: url("../img/site-specific/admin-list-chart.png") no-repeat 0 -1551px;
+    left: 143px;
+    padding: 0 0 0 113px;
+    position: absolute;
+    top: 39px;
+}
+span.skipped {
+	background: url("../img/site-specific/chart-bg.png") no-repeat 0 -581px;
+	padding: 0 0 0 3px;
+}
+span.skipped a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -607px;
+}
+span.order-completed {
+    background: url("../img/site-specific/chart-bg.png") no-repeat left -901px;
+    padding: 0 0 0 3px;
+}
+span.order-completed a {
+	background: url("../img/site-specific/chart-bg.png") no-repeat right -927px;
+}
+span.bid-expired, span.product-open, span.order-inprocess, span.skipped, span.order-completed, span.cancelled, span.new-product, span.bid-closed, span.product-upcoming, span.product-closed, span.new-order {
+	display:block;
+}
+span.bid-expired a, span.product-open a, span.order-inprocess a, span.skipped a, span.order-completed a, span.cancelled a, span.new-product a, span.bid-closed a, span.product-upcoming a, span.product-closed a, span.new-order a {
+	display:inline-block;
+}
+div.up-arrow {
+	background: url("../img/site-specific/admin-list-chart.png") no-repeat 0 -623px;
+	height: 22px;
+	position: absolute;
+	right: -185px;
+	top: 17px;
+	width: 14px;
+	z-index: 2;
+}
+div.dashboard-filter-block ul.product-chart > li span {
+	line-height: 23px;
+	margin: 0;
+	padding: 0 0 0 3px;
+}
+.product-chart-block .total {
+	background: #FFFFFF;
+	border: 1px solid #E0DED3;
+	bottom: 27px;
+	padding: 3px 8px;
+	position: absolute;
+	right: 29px;
+	width: auto;
+	z-index: 3;
+}
+.product-chart-block .total a {
+	color:#000;
+}
+.product-chart-block .total:hover a {
+	text-decoration: underline;
+}
+/* Dashboard chart block style is begin */
+div.dashboard-chart-block {
+    margin: 7px 15px 14px 4px;
+    min-height: 200px;
+    padding: 10px 0 0 30px;
+    width: 890px;
+}
+ul.dashboard-info-list {
+	margin: 25px 0 0 20px;
+}
+ul.dashboard-info-list li {
+	min-height: 22px;
+	padding: 3px 10px 3px 0;
+}
+ul.dashboard-info-list li span.project-status {
+	display: block;
+	font-size: 11px;
+	font-weight: 400;
+	height: 13px;
+	line-height: 13px;
+	margin: 8px 0 0;
+	padding: 0 0 0 12px;
+}
+ul.dashboard-info-list li span.bid-expired {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -124px;
+}
+ul.dashboard-info-list li span.waiting-esrow {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -138px;
+}
+ul.dashboard-info-list li span.order-inprocess {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -96px;
+}
+ul.dashboard-info-list li span.cancelled {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -222px;
+}
+ul.dashboard-info-list li span.skipped {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -180px;
+}
+ul.dashboard-info-list li span.order-completed {
+	background: url("../img/site-specific/status-box.png") no-repeat 0 -152px;
+}
+.my-chart {
+	margin: 18px 15px 20px 0;
+}
+.dashboard-info-list {
+	margin: 25px 0 0 20px;
+}
+div.pending-to-completed-block{
+    background: url("../img/site-specific/admin-list-chart.png") no-repeat 0 -1685px;
+    height: 33px;
+    left: 64px;
+    position: absolute;
+    top: -30px;
+    width: 500px;
+}
+/* Dashboard chart block style is end */

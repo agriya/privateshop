@@ -1,0 +1,219 @@
+
+/* ------------------------------------------------------------
+	NUMBER OF COLUMNS: Adjust .project-guideline-block li to set the number
+	of columns required in your site map. The default is 
+	4 columns (25%). 5 columns would be 20%, 6 columns would 
+	be 16.6%, etc. 
+------------------------------------------------------------ */
+
+.project-guideline-block li {
+	width:33%;
+}
+
+.project-guideline-block li ul li {
+	width:100% !important;
+}
+
+.project-guideline-block.col1 li { width:99.9%; }
+.project-guideline-block.col2 li { width:50.0%; }
+.project-guideline-block.col3 li { width:33.3%; }
+.project-guideline-block.col4 li { width:25.0%; }
+.project-guideline-block.col5 li { width:20.0%; }
+.project-guideline-block.col6 li { width:16.6%; }
+.project-guideline-block.col7 li { width:14.2%; }
+.project-guideline-block.col8 li { width:12.5%; }
+.project-guideline-block.col9 li { width:11.1%; }
+.project-guideline-block.col10 li { width:10.0%; }
+
+/* ------------------------------------------------------------
+	General Styles
+------------------------------------------------------------ */
+
+
+.project_guideline {
+	margin: 0 0 40px 0;
+	float: left;
+	width: 100%;
+}
+
+
+/* ------------------------------------------------------------
+	Site Map Styles
+------------------------------------------------------------ */
+
+/* --------	Top Level --------- */
+
+.project-guideline-block {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+.project-guideline-block .home {
+	display: block;
+	float: none;
+	position: relative;
+	z-index: 2;
+	padding: 0 0 30px 0;
+}
+.project-guideline-block li {
+	float: left;
+	background: url(../img/guideline/line1-center.png) center top no-repeat;
+	padding: 30px 0;
+}
+.project-guideline-block .branch,.project-guideline-block li li.branch:last-child {
+	float: left;
+	background: url(../img/guideline/line1-left.png) center top no-repeat;
+	padding: 30px 0 0px 0;
+}
+.project-guideline-block li span {
+	margin: 0 20px 0 0;
+	padding: 10px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: black;	
+	background: #c3eafb url(../img/guideline/shadow-white.png) top left repeat-x;
+	border: 2px solid #b5d9ea;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; 
+	-moz-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; /* FF 3.5+ */	
+}
+.project-guideline-block li span:hover {
+	background-color: #e2f4fd;
+	border-color: #97bdcf;
+}
+.project-guideline-block li:last-child, .project-guideline-block li.home {
+	background: url(../img/guideline/line1-right.png) center top no-repeat;
+}
+.project_guideline a:link:before,
+.project_guideline a:visited:before {
+	content: " "attr(href)" ";
+	display: block;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}
+.project-guideline-block li a:link:before,
+.project-guideline-block li a:visited:before {
+	color: #78a9c0;
+}
+
+/* --------	Second Level --------- */
+
+.project-guideline-block li li {
+	width: 100%;
+	clear: left;
+	margin-top: 0;
+	padding: 10px 0 0 0;
+	background: url(../img/guideline/vertical-line.png) center bottom repeat-y;
+}
+.project-guideline-block li li span {
+	background-color: #cee3ac;
+	border-color: #b8da83;
+}
+.project-guideline-block li li span:hover {
+	border-color: #94b75f;
+	background-color: #e7f1d7;
+}
+.project-guideline-block li li:first-child {
+	padding-top: 30px;
+}
+.project-guideline-block li li:last-child {
+	background: url(../img/guideline/vertical-line.png) center bottom repeat-y;
+}
+
+.project-guideline-block li li a:link:before,
+.project-guideline-block li li a:visited:before {
+	color: #8faf5c;
+}
+
+/* --------	Third Level --------- */
+
+.project-guideline-block li li ul {
+	width: 100%;
+	float: right;
+	padding: 0px 0 0px 0;
+	margin:2px 0 0 0;
+	background: #ffffff url(../img/guideline/line1-center.png) center top no-repeat;
+	position:absolute;
+	right:-304px;
+}
+.project-guideline-block li li ul.last {
+	background: #ffffff url(../img/guideline/line1-right.png) center top no-repeat;
+	right:-608px;
+}	
+.project-guideline-block li li ul.first {
+	background: #ffffff url(../img/guideline/line1-right.png) center top no-repeat;
+	right:-304px;
+}
+.project-guideline-block li li li {
+	background: url(../img/guideline/line3-center.png) left center no-repeat;
+	padding: 10px 0 0 0;
+}
+.project-guideline-block li li li:first-child {	
+	background: none;
+}
+.project-guideline-block li li li a:link:before,
+.project-guideline-block li li li a:visited:before {
+	color: #ccae14;
+	font-size: 9px;
+}
+
+
+/* ------------------------------------------------------------
+	Utility Navigation
+------------------------------------------------------------ */
+
+#utilityNav {
+	float: right;
+	max-width: 50%;
+	margin-right: 10px;
+}
+#utilityNav li {
+	float: left;
+	margin-bottom: 10px;
+}
+#utilityNav li a {
+	margin: 0 10px 0 0;
+	padding: 5px 10px;
+	display: block;	
+	border: 2px solid #e3ca4b;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	background: #fff7aa url(../img/guideline/shadow-white.png) top left repeat-x;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; 
+	-moz-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; /* FF 3.5+ */	
+}
+#utilityNav li a:hover {
+	background-color: #fffce5;
+	border-color: #d1b62c;
+}
+#utilityNav li a:link:before,
+#utilityNav li a:visited:before {
+	color: #ccae14;
+	font-size: 9px;
+	margin-bottom: 3px;
+}
+.notes p {
+	font-family: Georgia, Times, serif;
+	font-size: 13px;
+}
+.notes p a  {
+	text-decoration: underline;
+}
+.notes p a:link:before,
+.notes p a:visited:before {
+	content: "  ";
+	display: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}

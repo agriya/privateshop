@@ -1,0 +1,81 @@
+Groupon26
+
+1.flash message is not proper(buy deal)
+
+2.coupon code is cross the border
+
+3.RECENT DEAL VIEW PAGE BUTTON ALIGNMENT
+
+4.footer geouponpro logo is not visible but link is there
+
+5.footer logo is grouponpro
+
+6.before login buy the deal in buy page  register form design is not proper 
+
+7.buy page amount should be proper
+
+
+
+Groupon19
+
+1.visit more cities and get daily alert option is not working
+
+2.commission file is not mandatory
+
+3.side deal option is present in add deal and deal page side deal field should present
+
+4.refr friend option is not working for openid user
+
+5.credit card is not working amount is taken from wallet
+
+6.Gift coupon view option is not present
+
+7.Flash message is not proper for buy the deal and gift card resend
+
+8.unsubscribe page design is not proper
+
+9.balnce is zero then amount should be proper
+
+10.redeem gift card page design is not proper
+
+11.recent deal alignment is not proper kigali
+
+12.recent deal is not proper for kigali
+
+13.add deal page alignment is not proper for companyuser
+
+14.companyuser alignment is not proper
+
+15.redeem link redirect to redeem view page shouldnot redirect to login page with autorization message
+
+16.in chrome login and register is not working
+
+17.deal is not present for the city but side deal is present then side deal should display in deal page
+
+18.paypal field is missing in my account but in withdraw displaying paypal account
+
+19.after redeemed then the redeemed field shoulg get change 'yes'
+
+
+
+1.Deal status is on message has shown in the recent deals
+2.Groupon private policy is displaying (click privacy in the footer)
+3.Home page displayed with city listings
+4.Facebook is not working(click the fconnect in the  in the register page and log in)
+5.There is no option to select the open id.
+6.Asking API key  while adding the company
+
+1.cron is not working
+
+2.google map is not working
+
+3.refer friend and friend option
+
+4.twitter share deal is not proper
+
+5.companyuser logout and My stuff is not displaying
+
+
+6.refer friend not get the money
+
+

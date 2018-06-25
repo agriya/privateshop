@@ -1,0 +1,28 @@
+INSERT INTO `product_statuses` (`id`, `created`, `modified`, `name`, `product_count`) VALUES
+(6, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'Awaiting Approval', 1),
+(7, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'Rejected', 0),
+(8, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'Paid to Seller', 0);
+
+ALTER TABLE  `users` ADD  `product_awaiting_approval_count` BIGINT( 20 ) NOT NULL AFTER  `product_canceled_count` ,ADD  `product_rejected_count` BIGINT( 20 ) NOT NULL AFTER  `product_awaiting_approval_count` ;
+
+INSERT INTO `setting_categories` (`id`, `created`, `modified`, `name`, `description`) VALUES (28, '', '', 'Seller', 'Seller Module related settings.');
+
+INSERT INTO `settings` (`id`, `setting_category_id`, `name`, `value`, `description`, `type`, `options`, `label`, `order`, `fieldset`, `fieldset_order`) VALUES 
+(NULL, '28', 'seller.is_auto_approve_new_product', '0', 'Auto approve new product', 'checkbox', NULL, 'While enable user''s added product will be approved automatically', '', '', ''), 
+(NULL, '28', 'seller.commission_percentage', '10', 'Site Product Default Percentage', 'text', NULL, 'This percentage will be considered for all the product, admin can override this settings in each product', '', '', ''),
+(NULL, '28', 'seller.bonus_amount', '0', 'Default bonus amount for all products', 'text', NULL, 'Default bonus amount will be considered for all the product, admin can override this settings in each product', '', '', '');
+
+ALTER TABLE  `orders` ADD  `total_commission_amount` DOUBLE( 10, 2 ) NOT NULL AFTER  `phone` ;
+ALTER TABLE  `order_items` ADD  `commission_amount` DOUBLE( 10, 2 ) NOT NULL AFTER  `total_price` ;
+ALTER TABLE  `products` ADD  `bonus_amount` DOUBLE( 10, 2 ) NOT NULL AFTER  `discount_amount` ,ADD  `commission_percentage` DOUBLE( 10, 2 ) NOT NULL AFTER  `bonus_amount` ,ADD  `total_commission_amount` DOUBLE( 10, 2 ) NOT NULL AFTER  `commission_percentage` ;
+
+UPDATE  `settings` SET  `label` =  'When status changed as shipped, after threshold limit only status will be changes as completed and amount will be paid to seller' WHERE  `settings`.`id` =365 LIMIT 1 ;
+
+INSERT INTO `order_statuses` (`id`, `created`, `modified`, `name`, `order_count`) VALUES (7, '', '', 'Paid To Seller', '');
+
+INSERT INTO `transaction_types` (`id`, `created`, `modified`, `name`, `is_credit`, `message`, `transaction_variables`) VALUES
+(16, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'Paid amount for order to seller', 0, 'Paid amount for ##ORDER_NO## to ##USER##', 'USER, ORDER_NO');
+
+
+INSERT INTO `email_templates` (`id`, `created`, `modified`, `from`, `reply_to`, `name`, `description`, `subject`, `email_content`, `email_variables`) VALUES
+(NULL, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '##FROM_EMAIL##', '##REPLY_TO_EMAIL##', 'Buyers list for a product', 'When product get closed, seller will get buys list who are downloaded that product', 'List of buyers for "##PRODUCT_NAME##" product', '<style type="text/css">\r\n<!--\r\n.style1 {\r\n	color: #00b5c8\r\n}\r\n-->\r\n</style>\r\n<div style="padding: 10px; width: 720px; margin: auto;">\r\n<table width="720px" cellspacing="0" cellpadding="0">\r\n  <tbody><tr>\r\n    <td align="center">\r\n      <p style="text-align: center; font-size: 11px; color: rgb(146, 146, 146); margin: 3px;">\r\n        Be sure to add\r\n        <a href="mailto:##FROM_EMAIL##" style="color: #00b5c8;" title="Add ##FROM_EMAIL## to your whitelist" target="_blank">##FROM_EMAIL##</a>\r\n        to your address book or safe sender list so our emails get to your inbox.      </p>\r\n    </td>\r\n  </tr>\r\n</tbody></table>\r\n<div style="color:#999; font-family:Arial, Helvetica, sans-serif; font-size:12px; width:600px; margin:0px auto; border:5px solid #bfe27d; padding:20px; background: ebfdff;">\r\n<div style="background:#FFF; padding:10px;">\r\n  <table width="100%" style="background-color: rgb(255, 255, 255);">\r\n<tr>\r\n      <td align="center">\r\n        <div style="padding: 12px; margin: 0pt 30px; border-bottom: 1px solid rgb(214, 214, 214);">\r\n          <a href="##SITE_LINK##" style="color: rgb(255, 255, 255);" title="##SITE_NAME##" target="_blank"><img alt="[Image: ##SITE_NAME##]" src="##SITE_LOGO##"></a>\r\n        </div>\r\n      </td>\r\n    </tr>\r\n    <tr>	\r\n</table>\r\n<p>Hello <strong style="color:#00b5c8;">##USERNAME##</strong>,</p>\r\n\r\n<p>Buyers list for <a href=''##PRODUCT_URL##'' title=''##PRODUCT_NAME##'' style="color:#00b5c8">##PRODUCT_NAME##</a></p>\r\n\r\n<div>\r\n         ##TABLE##\r\n<div>\r\n	<div style="margin:0px 0px;padding:20px 10px; text-align:center;">\r\n			<h6 style="color:#00b5c8; font-family:Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; line-height:26px; margin:0 0 5px; text-align:center;">Thanks</h6>\r\n		<p style="color:#545454;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;margin:0;text-align:center;font-weight:bold;">##SITE_NAME## - ##SITE_LINK##</p>\r\n\r\n	</div>\r\n</div>\r\n\r\n</div>\r\n</div><div style="margin:0; text-align:center; border-top:2px solid #d9d9d9; background:#e6e6e6; padding:13px 0;">\r\n      <p style="margin:0; font-weight:bold; color:#000;">Need help? Have feedback? Feel free to <a href="##CONTACT_URL##" title="Contact ##SITE_NAME##" target="_blank" class="style1">Contact Us</a> </p>            \r\n    </div>\r\n  </div>\r\n</div>\r\n<p style="text-align:center; font:11px Arial, Helvetica, sans-serif; color:#929292; margin:20px 0;">Delivered by <a href="##SITE_LINK##" style="color: #00b5c8;" title="##SITE_NAME##" target="_blank">##SITE_NAME##</a></p>\r\n</div>', 'FROM_EMAIL,REPLY_TO_EMAIL,SITE_NAME,SITE_LINK,TABLE,USERNAME,PRODUCT,PRODUCT_NAME');

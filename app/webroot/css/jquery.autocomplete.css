@@ -1,0 +1,146 @@
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('../img/throbber.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+.ui-menu-item {
+	background:#f1f1f1;
+	border:1px solid #DDD;
+	position:relative;
+	padding:5px;
+}
+.ui-menu-item a.ui-state-hover {
+	border:none;
+}
+div#mapblock ul.menu-over-ul {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    display: block;
+    left: 197px;
+    margin: 5px 0 0;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+    padding: 0 0 1px 5px;
+    position: absolute;
+    top: -6px;
+    width: 195px;
+    z-index: 1000 !important;
+}
+div#mapblock ul.menu-over-ul li {
+	padding:0px;
+	margin:0px;
+}
+div#mapblock .ui-menu-item a {
+    border-color: #EEEEEE #EEEEEE #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    width: 185px;
+}
+div#mapblock .ui-menu-item:hover>a,div#mapblock .menu-over-address:hover a {
+	background:#FDF9E1;
+	border:1px solid #FBCB09;
+	color:#c87404;
+}
+div#mapblock {
+	display:none;
+}
+#mapframe {
+	background-color:#E7E7E7;
+	left:207px;
+	padding:5px;
+	top:10px;
+	visibility:hidden;
+	width:200px;
+	position:absolute;
+}
+#mapwindow,#mapwindow div {
+	z-index:1 !important;
+}
+#mapframe #mapwindow {
+	width:200px;
+	height:200px;
+	position: static !important;
+}
+/* auto completed style begin */
+#mapblock .ui-autocomplete {
+    background: #EEEEEE;
+    border: medium none;
+    left: 0 !important;
+    position: relative;
+    top: 4px !important;
+    width: 198px !important;
+    z-index: 4 !important;
+}
+div#mapblock {
+    background: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    display: none;
+    left: 190px;
+    min-height: 225px;
+    padding: 0;
+    position: absolute;
+    top: 33px;
+    width: 425px;
+    z-index: 100000;
+}
+div.mapblock-info {
+	padding:0;
+	z-index:2;
+	position:relative;
+}
+#mapblock .menu-over-ul li h3 {
+    padding: 4px 0;
+    color:#000;
+    font-weight:bold;
+}
+.new-shipping-address-block div#mapblock {
+    left: 131px;
+    top: 36px;
+}

@@ -1,0 +1,237 @@
+/** admin side filter list */
+ul.filter-list {
+	margin: 10px 0 5px;
+}
+ul.filter-list li {
+	float:left;
+	margin:0 8px 10px 0;
+}
+ul.filter-list li a {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	white-space: nowrap;
+}
+ul.filter-list li a:hover {
+	color: #EFF0F2;
+}
+ul.filter-list li span {
+	color: #FFFFFF;
+	float: left;
+	padding: 1px 3px;
+}
+ul.filter-list li span span {
+	float:left;
+}
+span.total, ul.filter-list li.filter-all a {
+	border: 1px solid #DEDEDE;
+	color: #000;
+}
+ul.filter-list li.filter-all a {
+	line-height:25px;
+}
+span.active {
+	background:#0E910E;
+}
+span.inactive {
+	background:#DF5958;
+}
+span.featured {
+	background:#00b9ae;
+}
+span.not-featured {
+	background:#619996;
+}
+span.site {
+	background:#E49F18;
+}
+span.openid {
+	background:#AAA8A5;
+}
+span.gmail {
+	background: #D1320D;
+}
+span.facebook {
+	background:#3B5998;
+}
+span.twitter {
+	background:#53D4FF;
+}
+span.gmail {
+	background:#2A91C9;
+}
+span.admin, ul.filter-list li.filter-admin a {
+	background:#FFF830;
+}
+span.yahoo {
+	background:#7B0099;
+}
+span.suspend {
+	background:#FF7145;
+}
+span.flagged {
+	background: #8B65D6;
+}
+span.suspended {
+	background: #ecac00;
+}
+span.all {
+	background: #ed00d9;
+}
+span.canceled {
+	background: #ff0000;
+}
+span.admin a, ul.filter-list li.filter-admin a {
+	color:#000;
+}
+span.flagged, span.paymentpending, span.notredeemed, span.redeemed, span.completed, span.inprocess, span.expired, span.canceledandrefunded, span.canceled, span.shipped, span.paidtoseller, span.completed, span.inactive, span.draft, span.upcoming, span.open, span.closed, span.rejected, span.awaitingapproval, span.openforvoting, span.suspended, span.all {
+	color: #FFFFFF;
+	font-size: 9px;
+	font-weight: bold;
+	padding: 3px;
+}
+span.all {
+	background:#fff;
+	border: 1px solid #aaa;
+}
+span.paymentpending {
+	background:#ADC6B9;
+}
+span.notredeemed {
+	background:#EDA710;
+}
+span.redeemed, span.completed {
+	background:#4CB153;
+}
+span.inprocess {
+	background:#6E8F84;
+}
+span.expired {
+	background:#A5A5A5;
+}
+span.canceledandrefunded, span.canceled {
+	background:#B796A7;
+}
+span.shipped {
+	background:#B59889;
+}
+span.paidtoseller {
+	background:#B371AF;
+}
+span.completed {
+	background:#599F80;
+}
+span.draft {
+	background:#AD2D2D;
+}
+span.upcoming {
+	background:#59BFB3;
+}
+span.open {
+	background:#536CA6;
+}
+span.closed {
+	background:#3B4A04;
+}
+span.rejected {
+	background:#DA1F1F;
+}
+span.awaitingapproval {
+	background:#8C66D9;
+}
+span.openforvoting {
+	background:#3C995B;
+}
+span.featured {
+	background:#8F6708;
+}
+span.not-featured {
+	background:#9D8753;
+}
+.filter-active a {
+	background: #0E910E;
+}
+.filter-inactive a {
+	background: #DF5958;
+}
+ul.filter-list li span.admin a, ul.filter-list li span.total a {
+	color:#000;
+}
+/* New filter style is begin */
+ul.filter-list-block {
+	margin:10px 0 0 0;
+	padding:0 0 10px;
+	border-bottom:1px solid #ddd;
+}
+ul.filter-list-block li {
+	float:left;
+	border-left:1px solid #ddd;
+}
+ul.filter-list-block li:first-child {
+	border:none;
+}
+ul.filter-list-block li a {
+    display: block;
+    font-size: 18px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+ul.filter-list-block li a:hover {
+    color:#00AFEF;
+}
+ul.filter-list-block li.active, ul.filter-list-block li:hover {
+	background:#f7f7f7;
+}
+ul.filter-list-block li a span {
+    color: #B1B1B1;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+.green-block a {
+    color:#557d36;
+}
+.brown-block a {
+    color:#DF5958;
+}
+.orange-block a {
+    color:#E49F18;
+}
+.blue-block a {
+    color:#3B5998;
+}
+.lightblue-block a {
+    color:#8f91db;
+}
+.gmail-block a {
+	color:#E49F18;
+}
+.yahoo-block a {
+	color:#ce37ff;
+}
+.purple-block a {
+    color:#B600FF;
+}
+.meroon-block a {
+	color:#d71a03
+}
+.import-block a{
+	color:#cc9999;
+}
+.bluedark a {
+	color:#2A91C9;
+}
+.pink-block a{
+	color:#FF85AD;
+}
+.lightpink-block a {
+	color:#a87163;
+}
+.red-block a {
+	color:#ff0000;
+}
+.expired-block a {
+	color:#A5A5A5;
+}
+/* New filter style is End */

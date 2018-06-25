@@ -1,0 +1,14 @@
+/* Color */
+$base-black: #000000;
+$border-style: solid;
+$radius-4: 4px;
+
+@mixin rounded($radius: 10px) {
+ -webkit-border-radius: $radius;
+ -moz-border-radius: $radius;
+ -o-border-radius:$radius;
+ -ms-border-radius: $radius;
+ -khtml-border-radius: $radius;
+ border-radius: $radius; 
+}
+

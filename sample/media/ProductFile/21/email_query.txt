@@ -1,0 +1,32 @@
+UPDATE  `sfplatform`.`email_templates` SET  `email_content` =  'Dear ##USERNAME##,
+
+Your pledged amount ##AMOUNT## for the project "##PROJECT_NAME##" has been refunded and credited to your wallet.
+
+Thanks,
+##SITE_NAME##
+##SITE_URL##' WHERE  `email_templates`.`id` =29 LIMIT 1 ;
+
+
+INSERT INTO  `sfplatform`.`email_templates` (
+`id` ,
+`created` ,
+`modified` ,
+`from` ,
+`reply_to` ,
+`name` ,
+`description` ,
+`subject` ,
+`email_content` ,
+`email_variables` ,
+`is_html`
+)
+VALUES (
+NULL ,  '2012-05-21 11:20:44',  '2012-05-21 11:20:47',  '##FROM_EMAIL##',  '##REPLY_TO_EMAIL##',  'Project refund notification Paypal',  'we will send this mail, when a refund to backer if they use paypal.',  '[##PROJECT_NAME##] Pledge of $1.00 voided',  'Dear ##USERNAME##,
+
+Your authorized amount ##AMOUNT## for the project "##PROJECT_NAME##" has been voided.
+
+Thanks,
+##SITE_NAME##
+##SITE_URL##',  'PROJECT_NAME,SITE_NAME,SITE_URL,USER_NAME',  '0'
+);
+
